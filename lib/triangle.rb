@@ -10,12 +10,10 @@ class Triangle
   def kind 
     
     if (x == y && x == z && y == z) 
-      
-    
-    
-    :equilateral 
-    :isosceles 
-    :scalene
+      :equilateral
+    end 
+    # :isosceles 
+    # :scalene
     
   end 
   
