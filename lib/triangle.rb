@@ -11,8 +11,10 @@ class Triangle
     
     if (x == y && x == z && y == z) 
       :equilateral
-      elsif (x == y || x == z || y == z) 
-          :isosceles
+    elsif (x == y || x == z || y == z) 
+      :isosceles
+    elsif (x != y && x != z && y != z)
+      :scalene
     end 
     # :isosceles 
     # :scalene
