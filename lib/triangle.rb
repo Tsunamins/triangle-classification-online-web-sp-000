@@ -8,16 +8,16 @@ class Triangle
   end 
   
   def kind 
-    if (x <= 0 || y <= 0 || z <= 0) 
+    if (x <= 0 || y <= 0 || z <= 0) || (x + y < z || x + z < y || y + z < x) 
       raise TriangleError
-    elsif 
-      
-        if (x == y && x == z && y == z) 
-          :equilateral
-        elsif (x == y || x == z || y == z) 
-         :isosceles
-       elsif (x != y && x != z && y != z)
-          :scalene
+    # elsif (x + y < z || x + z < y || y + z < x) 
+    #   raise TriangleError
+    elsif (x == y && x == z && y == z) 
+      :equilateral
+    elsif (x == y || x == z || y == z) 
+     :isosceles
+    elsif (x != y && x != z && y != z)
+      :scalene
     end 
     
     
